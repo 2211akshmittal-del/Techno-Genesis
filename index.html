@@ -1,0 +1,1115 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="TechnoGenesis — An educational interactive exploration into how intelligence, bio-systems, and technology shape tomorrow." />
+    <title>TechnoGenesis — The Birth of a New World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="ambient-backdrop" aria-hidden="true"></div>
+    <canvas id="star-canvas" aria-hidden="true"></canvas>
+
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <header class="sticky-header py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl px-0" aria-label="Main Navigation">
+                <div class="container-fluid px-0">
+                    <a class="navbar-brand brand" href="#home" aria-label="TechnoGenesis home">
+                        <span class="brand-mark" title="Triple tap for reading view">✦</span>
+                        <span class="brand-name">
+                            <span class="brand-name-main">TECHNO<span class="brand-accent">GENESIS</span></span>
+                            <small>THE BIRTH OF A NEW WORLD</small>
+                        </span>
+                    </a>
+
+                    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end mt-3 mt-xl-0" id="navbarNav">
+                        <div
+                            class="nav-links d-flex flex-column flex-xl-row align-items-start align-items-xl-center gap-3 gap-xl-4">
+                            <a href="#vision" class="nav-link">Vision</a>
+                            <a href="#frontiers" class="nav-link">Frontiers</a>
+                            <a href="#morpho" class="nav-link">Morphogenesis</a>
+                            <a href="#humanity" class="nav-link">Humanity</a>
+                            <a href="#timeline" class="nav-link">Timeline</a>
+                            <a href="#explore" class="nav-link">Idea Lab</a>
+
+
+                            <div class="d-flex align-items-center gap-2">
+                                <button class="nav-toggle-btn" id="toggle-ambient" type="button"
+                                    title="Toggle Aurora Atmosphere Palette (Alt+Shift+A)"
+                                    aria-label="Toggle Aurora Palette">
+                                    ☼
+                                </button>
+                                <button class="nav-toggle-btn" id="toggle-reading" type="button"
+                                    title="Toggle Focused Reading View (Alt+Shift+R)" aria-label="Toggle Reading View">
+                                    ☵
+                                </button>
+                                <button class="nav-toggle-btn" id="toggle-audio" type="button"
+                                    title="Toggle Micro Sound Clicks" aria-label="Toggle Sound Effects">
+                                    ♪
+                                </button>
+                            </div>
+
+                            <a class="btn btn-outline-primary rounded-pill nav-cta" href="#explore">Explore ↗</a>
+
+                            <button class="quick-open btn btn-sm rounded-pill" type="button" aria-haspopup="dialog"
+                                aria-expanded="false">
+                                Quick jump <kbd>⌘ K</kbd>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+
+        <section class="hero row align-items-center" id="home">
+            <div class="col-lg-6 hero-content">
+                <p class="eyebrow"><span class="pulse"></span> A FIELD GUIDE TO TOMORROW</p>
+                <h1>The future is<br><span class="gradient-text">being written.</span></h1>
+                <p class="hero-copy">A new era is taking shape where intelligence meets imagination, biological systems
+                    learn to
+                    compute, and humanity redefines what is possible.</p>
+                <div class="hero-actions d-flex flex-wrap gap-3">
+                    <a class="btn btn-primary btn-lg rounded-pill px-4" href="#vision">Enter the new world ↗</a>
+                    <a class="btn btn-light btn-lg rounded-pill px-4" href="#morpho">▶ Simulate Morphogenesis</a>
+                </div>
+                <div class="hero-note mt-4"><span class="line"></span> NOT SCIENCE FICTION. A FUTURE WE CAN SHAPE.</div>
+            </div>
+
+            <div class="col-lg-6 hero-visual" aria-label="Abstract futuristic planet illustration">
+                <div class="planet-stage">
+                    <div class="planet-wrapper" id="interactive-planet"
+                        title="Move to tilt. Tap or hold to change the Aurora palette.">
+                        <div class="planet-orbit"></div>
+                        <div class="planet-orbit planet-orbit-inner"></div>
+                        <button class="planet" type="button" aria-label="Switch ambient color palette. Click or hold.">
+                            <div class="planet-shine"></div>
+                            <div class="planet-continent"></div>
+                        </button>
+                    </div>
+                    <p class="planet-hint" aria-hidden="true">MOVE TO ORBIT <span>·</span> TAP TO SHIFT THE AURORA</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="vision">
+            <div class="section-label"><span>01</span> THE BIG PICTURE</div>
+            <div class="row g-4 align-items-end">
+                <div class="col-lg-6">
+                    <h2>A world transformed.<br><span class="muted">A future shared.</span></h2>
+                </div>
+                <div class="col-lg-6">
+                    <p class="lead">Technology is more than faster devices. It is a chance to rethink how we learn,
+                        heal, travel, build, and care for our planet.</p>
+                    <p class="body-copy">Imagine systems that help doctors spot illness earlier, clean energy that
+                        powers our cities, and learning experiences designed around every student. The future is not
+                        guaranteed—it
+                        depends on the choices we make today.</p>
+                </div>
+            </div>
+
+            <div class="stat-row row g-3 mt-4">
+                <div class="col-md-3 col-6">
+                    <div class="stat h-100">
+                        <strong>01<span> /</span></strong>
+                        <p>People-first<br>innovation</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat h-100">
+                        <strong>02<span> /</span></strong>
+                        <p>Planet-positive<br>progress</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat h-100">
+                        <strong>03<span> /</span></strong>
+                        <p>Synthetic<br>Biology</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat stat-message h-100">
+                        <p>Progress matters most when<br><em>everyone can benefit.</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="frontiers">
+            <div class="section-heading row align-items-end justify-content-between g-3">
+                <div class="col-lg-6">
+                    <div class="section-label"><span>02</span> THE FRONTIERS</div>
+                    <h2>Tomorrow, <span class="muted">in motion.</span></h2>
+                </div>
+                <div class="col-lg-5">
+                    <p>Explore four fields that will reshape everyday life. Select a card to reveal the opportunity—and
+                        the responsibility.</p>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-2">
+                <div class="col-lg-3 col-md-6">
+                    <button class="frontier-card h-100" type="button" data-insight="0" aria-pressed="true">
+                        <span class="card-number">01 / INTELLIGENCE</span>
+                        <span class="card-icon">⌘</span>
+                        <h3>AI & Robotics</h3>
+                        <p>Machines that assist, learn, and collaborate safely alongside people.</p>
+                        <span class="card-link">Explore insight ↗</span>
+                    </button>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <button class="frontier-card h-100" type="button" data-insight="1" aria-pressed="false">
+                        <span class="card-number">02 / OUR PLANET</span>
+                        <span class="card-icon">⌂</span>
+                        <h3>Living Cities</h3>
+                        <p>Ecological communities designed for circular, zero-carbon living.</p>
+                        <span class="card-link">Explore insight ↗</span>
+                    </button>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <button class="frontier-card h-100" type="button" data-insight="2" aria-pressed="false">
+                        <span class="card-number">03 / WELLBEING</span>
+                        <span class="card-icon">✚</span>
+                        <h3>Future Health</h3>
+                        <p>Earlier predictive insights and tailored preventive medicine.</p>
+                        <span class="card-link">Explore insight ↗</span>
+                    </button>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <button class="frontier-card h-100" type="button" data-insight="3" aria-pressed="false">
+                        <span class="card-number">04 / KNOWLEDGE</span>
+                        <span class="card-icon">⌁</span>
+                        <h3>Reimagined Learning</h3>
+                        <p>Curiosity-led education tailored to empower creative minds.</p>
+                        <span class="card-link">Explore insight ↗</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="insight-panel mt-4" aria-live="polite">
+                <div class="insight-symbol">✦</div>
+                <div>
+                    <p class="eyebrow mb-1">FIELD NOTE <span>01</span></p>
+                    <h3 id="panel-title">Human-centred intelligence</h3>
+                    <p id="panel-desc">AI can help people analyse complex information and handle repetitive tasks,
+                        giving them more time for creativity, judgement, and care.</p>
+                </div>
+                <div class="insight-challenge">
+                    <span>THE QUESTION</span>
+                    <p id="panel-question">How do we keep systems fair, transparent, and accountable?</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="morpho">
+            <div class="section-label"><span>03</span> SYNTHETIC BIOLOGY & PATTERN FORMATION</div>
+            <div class="row align-items-end justify-content-between g-4 mb-5">
+                <div class="col-lg-6">
+                    <h2>Morphogenesis <span class="gradient-text">Lab.</span></h2>
+                </div>
+                <div class="col-lg-6">
+                    <p class="mb-0">In 1952, Alan Turing mathematically proved that two interacting chemicals (an
+                        activator and inhibitor) can spontaneously generate all life's forms—from zebra stripes to
+                        neural networks. Inoculate the bio-field below to generate synthetic organic architecture.</p>
+                </div>
+            </div>
+
+            <div class="morpho-card row g-5 align-items-center">
+                <div class="col-lg-7">
+                    <div class="morpho-viewport">
+                        <span class="morpho-overlay-hint">DRAG TO INOCULATE BIO-CATALYST</span>
+                        <canvas id="morpho-canvas" width="160" height="130"></canvas>
+                        <span class="morpho-status-badge" id="morpho-fps">TURING ENGINE: ACTIVE</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="morpho-control-panel">
+                        <div>
+                            <span class="eyebrow mb-2">BIOLOGICAL ARCHETYPE</span>
+                            <div class="morpho-presets">
+                                <button class="btn-morpho-preset active" data-preset="coral">Neural Coral</button>
+                                <button class="btn-morpho-preset" data-preset="mitosis">Mitosis</button>
+                                <button class="btn-morpho-preset" data-preset="spots">Biolum-Spots</button>
+                                <button class="btn-morpho-preset" data-preset="spirals">Bio-Spirals</button>
+                            </div>
+                        </div>
+
+                        <div class="slider-group">
+                            <label for="feed-rate">Feed Rate (F): <span id="val-feed">0.0545</span></label>
+                            <input type="range" class="morpho-slider" id="feed-rate" min="0.010" max="0.090"
+                                step="0.0005" value="0.0545">
+                        </div>
+
+                        <div class="slider-group">
+                            <label for="kill-rate">Kill Rate (k): <span id="val-kill">0.0620</span></label>
+                            <input type="range" class="morpho-slider" id="kill-rate" min="0.045" max="0.070"
+                                step="0.0005" value="0.0620">
+                        </div>
+
+                        <div class="morpho-actions pt-2 border-top border-secondary border-opacity-25">
+                            <button id="btn-seed" class="btn btn-primary">⚡ Inoculate Seed</button>
+                            <button id="btn-clear" class="btn btn-outline-light">↺ Reset Field</button>
+                            <button id="btn-pause" class="btn btn-outline-primary">⏸ Pause</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section humanity" id="humanity">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5">
+                    <div class="humanity-art">
+                        <div class="human-ring-outer"></div>
+                        <div class="human-ring"></div>
+                        <div class="human-core">H<span>+</span>M</div>
+                        <div class="human-caption cap-one">HUMAN CREATIVITY</div>
+                        <div class="human-caption cap-two">MACHINE CAPABILITY</div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="section-label"><span>04</span> THE HUMAN QUESTION</div>
+                    <h2>Powerful tools.<br><span class="gradient-text">Human values.</span></h2>
+                    <p class="lead">A smarter world must also be a fairer, safer, and more thoughtful one.</p>
+                    <p class="body-copy">As technology grows more capable, we must protect privacy, reduce bias, keep
+                        people in control of important decisions, and ensure the upside is universally accessible.</p>
+
+                    <div class="principles mt-4">
+                        <div>
+                            <span>01</span>
+                            <p><b>Keep people in control</b><small>Use technology to elevate human agency, never to
+                                    diminish it.</small></p>
+                        </div>
+                        <div>
+                            <span>02</span>
+                            <p><b>Build with responsibility</b><small>Rigorous safety checks, algorithmic auditing, and
+                                    fairness by design.</small></p>
+                        </div>
+                        <div>
+                            <span>03</span>
+                            <p><b>Include everyone</b><small>Design universally accessible solutions and bridge the
+                                    global digital divide.</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="timeline">
+            <div class="section-label"><span>05</span> A POSSIBLE PATH</div>
+            <div class="section-heading row align-items-end justify-content-between g-3 mb-4">
+                <div class="col-lg-6">
+                    <h2>From today <span class="muted">to what’s next.</span></h2>
+                </div>
+                <div class="col-lg-5">
+                    <p>An illustrative timeline of technological synergy, guided by research and human choices.</p>
+                </div>
+            </div>
+
+            <div class="timeline-track row g-4">
+                <div class="col-md-4">
+                    <div class="time-item h-100">
+                        <span class="time-dot"></span>
+                        <span class="time-year">NOW — FOUNDATIONS</span>
+                        <h3>Building Guardrails</h3>
+                        <p>Digital literacy, grid modernization, open-source verification models, and global safety
+                            standards.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="time-item h-100">
+                        <span class="time-dot"></span>
+                        <span class="time-year">2030s — INTEGRATION</span>
+                        <h3>Symbiotic Systems</h3>
+                        <p>Interconnected micro-grids, autonomous ecological transit networks, and personalised
+                            genomics.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="time-item h-100">
+                        <span class="time-dot"></span>
+                        <span class="time-year">2050+ — REGENERATION</span>
+                        <h3>Planetary Equilibrium</h3>
+                        <p>Harmonized carbon capture, automated closed-loop agriculture, and deep space telemetry
+                            networks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="explore">
+            <div class="explore-card row align-items-center g-4">
+                <div class="col-lg-5 explore-copy">
+                    <div class="section-label"><span>06</span> YOUR TURN</div>
+                    <h2>The future isn’t<br>just arriving.<br><span class="gradient-text">We’re creating it.</span></h2>
+                    <p>Choose an area of interest, select an exploratory lens, and generate questions to spark your
+                        project.</p>
+                    <button id="surprise-prompt" class="btn btn-outline-primary rounded-pill px-4 mt-2">⚡ Surprise
+                        Challenge</button>
+                </div>
+
+                <div class="col-lg-7 idea-lab" id="idea-lab">
+                    <div class="idea-lab-toolbar d-flex justify-content-between align-items-center mb-2">
+                        <p class="eyebrow mb-0">THE IDEA LAB / INTERACTIVE</p>
+                        <div class="lens-selector">
+                            <button class="btn-lens active" type="button" data-lens="action">Action</button>
+                            <button class="btn-lens" type="button" data-lens="moonshot">Moonshot</button>
+                            <button class="btn-lens" type="button" data-lens="ethics">Ethics</button>
+                        </div>
+                    </div>
+
+                    <h3 class="mb-3">What would you improve?</h3>
+
+                    <div class="choice-list d-flex flex-wrap gap-2 mb-3">
+                        <button class="choice btn btn-light rounded-pill" type="button" data-prompt="0"
+                            aria-pressed="true">Education ↗</button>
+                        <button class="choice btn btn-light rounded-pill" type="button" data-prompt="1"
+                            aria-pressed="false">The Planet ↗</button>
+                        <button class="choice btn btn-light rounded-pill" type="button" data-prompt="2"
+                            aria-pressed="false">Healthcare ↗</button>
+                        <button class="choice btn btn-light rounded-pill" type="button" data-prompt="3"
+                            aria-pressed="false">Digital Equity ↗</button>
+                    </div>
+
+                    <div class="idea-result">
+                        <span class="result-tag" id="idea-lens-tag">IMMEDIATE ACTION STEP</span>
+                        <p id="idea-display">How could every student get personalized learning guidance that adapts to
+                            their strengths, while keeping teachers and peers at the center?</p>
+                        <button class="copy-prompt-btn" id="copy-prompt">⎘ Copy Question</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container py-5">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+            <a class="brand" href="#home">
+                <span class="brand-mark">✦</span>
+                <span class="brand-name">
+                    <span class="brand-name-main">TECHNO<span class="brand-accent">GENESIS</span></span>
+                    <small>THE BIRTH OF A NEW WORLD</small>
+                </span>
+            </a>
+            <p class="footer-tagline mb-0">Curiosity today. Possibility tomorrow.</p>
+            <a href="#home" class="back-top">BACK TO TOP ↑</a>
+        </div>
+        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+            <span>EDUCATIONAL DEMO PLATFORM</span>
+            <span>THE FUTURE IS A SHARED RESPONSIBILITY.</span>
+        </div>
+    </footer>
+
+
+    <dialog class="quick-dialog" aria-labelledby="quick-title">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+            <div>
+                <p class="eyebrow mb-1">COMMAND PALETTE</p>
+                <h2 id="quick-title" class="h4 mb-0">Navigate & Explore</h2>
+            </div>
+            <button class="quick-close" type="button" aria-label="Close dialog">×</button>
+        </div>
+
+        <input type="text" class="dialog-search" id="quick-search" placeholder="Type to filter sections or press 1-6..."
+            autocomplete="off" />
+
+        <nav class="quick-links" aria-label="Quick navigation">
+            <a href="#home" data-key="1"><span>Home</span><kbd>1</kbd></a>
+            <a href="#vision" data-key="2"><span>Vision & Impact</span><kbd>2</kbd></a>
+            <a href="#frontiers" data-key="3"><span>Frontiers</span><kbd>3</kbd></a>
+            <a href="#morpho" data-key="4"><span>Morphogenesis Lab</span><kbd>4</kbd></a>
+            <a href="#humanity" data-key="5"><span>Humanity & Ethics</span><kbd>5</kbd></a>
+            <a href="#timeline" data-key="6"><span>Timeline</span><kbd>6</kbd></a>
+            <a href="#explore" data-key="7"><span>Idea Lab</span><kbd>7</kbd></a>
+        </nav>
+        <p class="quick-hint mt-3 mb-0 text-muted small">Keyboard: Press <kbd>1</kbd>–<kbd>7</kbd> to jump instantly.
+            <kbd>Esc</kbd> to close.
+        </p>
+    </dialog>
+
+    <div class="mode-toast" role="status" aria-live="polite" aria-atomic="true">
+        <span class="toast-symbol">✦</span> <span class="toast-text">Notification</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const insightContent = [
+            {
+                title: "Human-Centred Intelligence",
+                description: "AI can help people analyse complex patterns and handle repetitive tasks, giving them more room for creativity, empathy, and high-order judgement.",
+                question: "How do we ensure autonomous systems remain fair, accountable, and transparent to the public?"
+            },
+            {
+                title: "Living & Regenerative Cities",
+                description: "Connected public transit, circular materials, and sensor-driven power systems can transform urban centers into living ecosystems.",
+                question: "How can smart infrastructure be developed equitably so every neighbourhood benefits equally?"
+            },
+            {
+                title: "Care That Starts Earlier",
+                description: "Responsible health computation helps physicians recognise early metabolic warning signs and deliver custom-tailored preventive treatments.",
+                question: "How do we safeguard health data autonomy while fostering collective medical breakthroughs?"
+            },
+            {
+                title: "Learning Reimagined",
+                description: "Adaptive discovery tools scaffold comprehension at each student's pace, elevating teachers into mentors and collaborators.",
+                question: "How can technology nurture divergent curiosity rather than standardized rote test scores?"
+            }
+        ];
+
+        const ideaMatrix = {
+            0: {
+                action: "How could every student get personalized learning guidance that adapts to their strengths, while keeping teachers and peers at the center?",
+                moonshot: "What if learning were an open, holographic world simulation where students solved real planetary challenges collaboratively?",
+                ethics: "How do we prevent algorithmic learning platforms from narrowing a child's worldview or over-profiling them early?"
+            },
+            1: {
+                action: "What small community change could make local neighborhoods dramatically cleaner, cooler, and friendlier to walk?",
+                moonshot: "What if buildings grew living bioluminescent algae facades that generated electricity and cleaned the city air passively?",
+                ethics: "How do we make sure clean green initiatives don't gentrify or displace historical communities?"
+            },
+            2: {
+                action: "How might people access personalized wellness insights continuously while keeping all genomic and medical data private on their own devices?",
+                moonshot: "What if nano-sensors in potable water could identify virus outbreaks hours before symptoms appear globally?",
+                ethics: "Who owns the rights to predictive diagnostic data when lives hang in the balance?"
+            },
+            3: {
+                action: "What open-source infrastructure could bring high-speed internet and computational resources to every underserved school?",
+                moonshot: "What if decentralized satellite meshes and solar repeaters made free gigabit connection a basic planetary human right?",
+                ethics: "How do we ensure that expanding digital connection preserves native languages and cultural identities?"
+            }
+        };
+
+        const frontierCards = document.querySelectorAll("[data-insight]");
+        const insightPanel = document.querySelector(".insight-panel");
+        const panelTitle = document.getElementById("panel-title");
+        const panelDesc = document.getElementById("panel-desc");
+        const panelQuestion = document.getElementById("panel-question");
+
+        const choices = document.querySelectorAll("[data-prompt]");
+        const lensButtons = document.querySelectorAll("[data-lens]");
+        const ideaDisplay = document.getElementById("idea-display");
+        const ideaLensTag = document.getElementById("idea-lens-tag");
+        const surpriseBtn = document.getElementById("surprise-prompt");
+        const copyPromptBtn = document.getElementById("copy-prompt");
+
+        const quickDialog = document.querySelector(".quick-dialog");
+        const quickOpen = document.querySelector(".quick-open");
+        const quickClose = document.querySelector(".quick-close");
+        const quickSearch = document.getElementById("quick-search");
+        const quickLinks = document.querySelectorAll(".quick-links a");
+
+        const planetWrapper = document.getElementById("interactive-planet");
+        const planet = document.querySelector(".planet");
+        const modeToast = document.querySelector(".mode-toast");
+        const toastText = modeToast.querySelector(".toast-text");
+
+        const toggleAmbientBtn = document.getElementById("toggle-ambient");
+        const toggleReadingBtn = document.getElementById("toggle-reading");
+        const toggleAudioBtn = document.getElementById("toggle-audio");
+
+        let activeTopic = 0;
+        let activeLens = "action";
+        let audioEnabled = false;
+        let audioCtx = null;
+        let toastTimer;
+
+        function playBeep(freq = 440, type = "sine", duration = 0.08) {
+            if (!audioEnabled) return;
+            try {
+                if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                if (audioCtx.state === "suspended") audioCtx.resume();
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = type;
+                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+                gain.gain.setValueAtTime(0.04, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + duration);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start();
+                osc.stop(audioCtx.currentTime + duration);
+            } catch (e) { }
+        }
+
+        function showToast(message) {
+            toastText.textContent = message;
+            modeToast.classList.add("is-visible");
+            window.clearTimeout(toastTimer);
+            toastTimer = window.setTimeout(() => modeToast.classList.remove("is-visible"), 2600);
+        }
+
+        function toggleAmbientMode() {
+            const active = document.body.classList.toggle("ambient-mode");
+            toggleAmbientBtn.classList.toggle("is-active", active);
+            playBeep(active ? 580 : 380, "sine");
+            showToast(`Aurora Palette: ${active ? "Activated" : "Standard"}`);
+        }
+
+        function toggleReadingMode() {
+            const active = document.body.classList.toggle("reading-mode");
+            toggleReadingBtn.classList.toggle("is-active", active);
+            playBeep(active ? 620 : 340, "triangle");
+            showToast(`Reading View: ${active ? "Focused" : "Full Art"}`);
+        }
+
+        toggleAmbientBtn.addEventListener("click", toggleAmbientMode);
+        toggleReadingBtn.addEventListener("click", toggleReadingMode);
+        toggleAudioBtn.addEventListener("click", () => {
+            audioEnabled = !audioEnabled;
+            toggleAudioBtn.classList.toggle("is-active", audioEnabled);
+            if (audioEnabled) playBeep(880, "sine");
+            showToast(`Sound FX: ${audioEnabled ? "Enabled" : "Muted"}`);
+        });
+
+        if (planetWrapper) {
+            planetWrapper.addEventListener("pointermove", (e) => {
+                if (e.pointerType === "touch" && e.buttons === 0) return;
+                const rect = planetWrapper.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                planetWrapper.style.transform = `rotateY(${x * 24}deg) rotateX(${-y * 24}deg)`;
+                const planetRect = planet.getBoundingClientRect();
+                const shineX = ((e.clientX - planetRect.left) / planetRect.width) * 100;
+                const shineY = ((e.clientY - planetRect.top) / planetRect.height) * 100;
+                planet.style.setProperty("--shine-x", `${Math.max(0, Math.min(100, shineX))}%`);
+                planet.style.setProperty("--shine-y", `${Math.max(0, Math.min(100, shineY))}%`);
+            });
+
+            planetWrapper.addEventListener("pointerleave", () => {
+                planetWrapper.style.transform = "rotateY(0deg) rotateX(0deg)";
+                planet.style.removeProperty("--shine-x");
+                planet.style.removeProperty("--shine-y");
+            });
+
+            let pressTimer;
+            let suppressClick = false;
+            let suppressClickTimer;
+            let reactTimer;
+            const reactToPlanet = () => {
+                planet.classList.remove("is-reacting");
+                void planet.offsetWidth;
+                planet.classList.add("is-reacting");
+                window.clearTimeout(reactTimer);
+                reactTimer = window.setTimeout(() => planet.classList.remove("is-reacting"), 900);
+            };
+
+            planet.addEventListener("pointerdown", (event) => {
+                if (event.button !== 0) return;
+                suppressClick = false;
+                planet.classList.add("is-pressed");
+                pressTimer = window.setTimeout(() => {
+                    suppressClick = true;
+                    reactToPlanet();
+                    toggleAmbientMode();
+                    suppressClickTimer = window.setTimeout(() => { suppressClick = false; }, 1000);
+                }, 600);
+            });
+
+            planet.addEventListener("pointerup", () => {
+                window.clearTimeout(pressTimer);
+                planet.classList.remove("is-pressed");
+            });
+
+            ["pointercancel", "pointerleave"].forEach((evt) => {
+                planet.addEventListener(evt, () => {
+                    window.clearTimeout(pressTimer);
+                    planet.classList.remove("is-pressed");
+                    suppressClick = false;
+                    window.clearTimeout(suppressClickTimer);
+                });
+            });
+
+            planet.addEventListener("click", (event) => {
+                if (suppressClick && event.detail > 0) {
+                    event.preventDefault();
+                    suppressClick = false;
+                    window.clearTimeout(suppressClickTimer);
+                    return;
+                }
+                reactToPlanet();
+                toggleAmbientMode();
+            });
+        }
+
+        let brandTapCount = 0;
+        let brandTapTimer;
+        document.querySelectorAll(".brand-mark").forEach((el) => {
+            el.addEventListener("click", (e) => {
+                brandTapCount++;
+                window.clearTimeout(brandTapTimer);
+                if (brandTapCount === 3) {
+                    e.preventDefault();
+                    brandTapCount = 0;
+                    toggleReadingMode();
+                } else {
+                    brandTapTimer = window.setTimeout(() => (brandTapCount = 0), 700);
+                }
+            });
+        });
+
+        frontierCards.forEach((card) => {
+            card.addEventListener("click", () => {
+                const idx = Number(card.dataset.insight);
+                const selected = insightContent[idx];
+                if (!selected) return;
+
+                playBeep(480 + idx * 40, "sine");
+                frontierCards.forEach((c) => c.setAttribute("aria-pressed", String(c === card)));
+                insightPanel.classList.add("is-changing");
+
+                window.setTimeout(() => {
+                    insightPanel.querySelector(".eyebrow span").textContent = String(idx + 1).padStart(2, "0");
+                    panelTitle.textContent = selected.title;
+                    panelDesc.textContent = selected.description;
+                    panelQuestion.textContent = selected.question;
+                    insightPanel.classList.remove("is-changing");
+                }, 150);
+            });
+        });
+
+
+        (function initMorphoLab() {
+            const canvas = document.getElementById("morpho-canvas");
+            if (!canvas) return;
+
+            const ctx = canvas.getContext("2d");
+            const width = canvas.width;
+            const height = canvas.height;
+            const size = width * height;
+
+            let u = new Float32Array(size);
+            let v = new Float32Array(size);
+            let nextU = new Float32Array(size);
+            let nextV = new Float32Array(size);
+
+            const presets = {
+                coral: { F: 0.0545, k: 0.0620 },
+                mitosis: { F: 0.0367, k: 0.0649 },
+                spots: { F: 0.0300, k: 0.0620 },
+                spirals: { F: 0.0180, k: 0.0510 }
+            };
+
+            let F = presets.coral.F;
+            let k = presets.coral.k;
+            const Du = 0.2097;
+            const Dv = 0.1050;
+            let isPaused = false;
+            let isDrawing = false;
+
+            const sliderF = document.getElementById("feed-rate");
+            const sliderK = document.getElementById("kill-rate");
+            const valF = document.getElementById("val-feed");
+            const valK = document.getElementById("val-kill");
+            const btnPause = document.getElementById("btn-pause");
+            const btnClear = document.getElementById("btn-clear");
+            const btnSeed = document.getElementById("btn-seed");
+            const presetButtons = document.querySelectorAll(".btn-morpho-preset");
+
+            function resetField() {
+                for (let i = 0; i < size; i++) {
+                    u[i] = 1.0;
+                    v[i] = 0.0;
+                }
+                seedRandomSpots(8);
+            }
+
+            function seedRandomSpots(count = 6) {
+                for (let s = 0; s < count; s++) {
+                    const cx = Math.floor(Math.random() * (width - 20)) + 10;
+                    const cy = Math.floor(Math.random() * (height - 20)) + 10;
+                    const radius = Math.floor(Math.random() * 6) + 4;
+                    inoculateAt(cx, cy, radius);
+                }
+            }
+
+            function inoculateAt(cx, cy, r = 6) {
+                for (let y = -r; y <= r; y++) {
+                    for (let x = -r; x <= r; x++) {
+                        if (x * x + y * y <= r * r) {
+                            const px = (cx + x + width) % width;
+                            const py = (cy + y + height) % height;
+                            const idx = py * width + px;
+                            u[idx] = 0.5;
+                            v[idx] = 0.25 + Math.random() * 0.25;
+                        }
+                    }
+                }
+            }
+
+            function stepSimulation() {
+                for (let y = 1; y < height - 1; y++) {
+                    const yOffset = y * width;
+                    for (let x = 1; x < width - 1; x++) {
+                        const i = yOffset + x;
+
+                        const uVal = u[i];
+                        const vVal = v[i];
+
+                        // 5-point laplacian stencil
+                        const lapU = (u[i - 1] + u[i + 1] + u[i - width] + u[i + width]) - 4 * uVal;
+                        const lapV = (v[i - 1] + v[i + 1] + v[i - width] + v[i + width]) - 4 * vVal;
+
+                        const uvv = uVal * vVal * vVal;
+                        nextU[i] = uVal + (Du * lapU - uvv + F * (1.0 - uVal));
+                        nextV[i] = vVal + (Dv * lapV + uvv - (F + k) * vVal);
+                    }
+                }
+
+
+                const tempU = u; u = nextU; nextU = tempU;
+                const tempV = v; v = nextV; nextV = tempV;
+            }
+
+            const imgData = ctx.createImageData(width, height);
+            const data = imgData.data;
+
+            function renderField() {
+                const isAmbient = document.body.classList.contains("ambient-mode");
+                for (let i = 0; i < size; i++) {
+                    const val = Math.max(0, Math.min(1, v[i] * 2.8));
+                    const idx = i * 4;
+
+                    if (val > 0.05) {
+                        if (isAmbient) {
+                            data[idx] = Math.floor(val * 96);
+                            data[idx + 1] = Math.floor(val * 220);
+                            data[idx + 2] = Math.floor(val * 255);
+                        } else {
+                            data[idx] = Math.floor(val * 59);
+                            data[idx + 1] = Math.floor(val * 158);
+                            data[idx + 2] = Math.floor(val * 255);
+                        }
+                        data[idx + 3] = Math.floor(val * 255);
+                    } else {
+                        data[idx] = 2;
+                        data[idx + 1] = 6;
+                        data[idx + 2] = 14;
+                        data[idx + 3] = 255;
+                    }
+                }
+                ctx.putImageData(imgData, 0, 0);
+            }
+
+            function loop() {
+                if (!isPaused && !document.body.classList.contains("reading-mode")) {
+                    for (let n = 0; n < 8; n++) {
+                        stepSimulation();
+                    }
+                    renderField();
+                }
+                requestAnimationFrame(loop);
+            }
+
+
+            function handlePointer(e) {
+                const rect = canvas.getBoundingClientRect();
+                const scaleX = canvas.width / rect.width;
+                const scaleY = canvas.height / rect.height;
+                const x = Math.floor((e.clientX - rect.left) * scaleX);
+                const y = Math.floor((e.clientY - rect.top) * scaleY);
+                inoculateAt(x, y, 5);
+                playBeep(400 + Math.random() * 200, "triangle", 0.02);
+            }
+
+            canvas.addEventListener("pointerdown", (e) => {
+                isDrawing = true;
+                handlePointer(e);
+            });
+            window.addEventListener("pointermove", (e) => {
+                if (isDrawing) handlePointer(e);
+            });
+            window.addEventListener("pointerup", () => { isDrawing = false; });
+
+            // UI Listeners
+            sliderF.addEventListener("input", (e) => {
+                F = parseFloat(e.target.value);
+                valF.textContent = F.toFixed(4);
+            });
+            sliderK.addEventListener("input", (e) => {
+                k = parseFloat(e.target.value);
+                valK.textContent = k.toFixed(4);
+            });
+
+            presetButtons.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    presetButtons.forEach(b => b.classList.remove("active"));
+                    btn.classList.add("active");
+                    const p = presets[btn.dataset.preset];
+                    if (p) {
+                        F = p.F;
+                        k = p.k;
+                        sliderF.value = F;
+                        sliderK.value = k;
+                        valF.textContent = F.toFixed(4);
+                        valK.textContent = k.toFixed(4);
+                        seedRandomSpots(5);
+                        playBeep(520, "sine");
+                    }
+                });
+            });
+
+            btnPause.addEventListener("click", () => {
+                isPaused = !isPaused;
+                btnPause.textContent = isPaused ? "▶ Resume" : "⏸ Pause";
+                playBeep(isPaused ? 300 : 600, "sine");
+            });
+
+            btnClear.addEventListener("click", () => {
+                resetField();
+                playBeep(350, "sine");
+            });
+
+            btnSeed.addEventListener("click", () => {
+                seedRandomSpots(8);
+                playBeep(740, "sine");
+            });
+
+            resetField();
+            requestAnimationFrame(loop);
+        })();
+
+
+        function updateIdeaLab() {
+            const container = document.querySelector(".idea-result");
+            container.classList.add("fade");
+            playBeep(520, "sine", 0.05);
+
+            const lensLabels = {
+                action: "IMMEDIATE ACTION STEP",
+                moonshot: "MOONSHOT BREAKTHROUGH",
+                ethics: "ETHICAL GUARDRAIL"
+            };
+
+            window.setTimeout(() => {
+                ideaLensTag.textContent = lensLabels[activeLens];
+                ideaDisplay.textContent = ideaMatrix[activeTopic][activeLens];
+                container.classList.remove("fade");
+            }, 120);
+        }
+
+        choices.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                choices.forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
+                activeTopic = Number(btn.dataset.prompt);
+                updateIdeaLab();
+            });
+        });
+
+        lensButtons.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                lensButtons.forEach((b) => b.classList.remove("active"));
+                btn.classList.add("active");
+                activeLens = btn.dataset.lens;
+                updateIdeaLab();
+            });
+        });
+
+        surpriseBtn.addEventListener("click", () => {
+            activeTopic = Math.floor(Math.random() * 4);
+            const lenses = ["action", "moonshot", "ethics"];
+            activeLens = lenses[Math.floor(Math.random() * lenses.length)];
+
+            choices.forEach((b) => b.setAttribute("aria-pressed", String(Number(b.dataset.prompt) === activeTopic)));
+            lensButtons.forEach((b) => b.classList.toggle("active", b.dataset.lens === activeLens));
+            updateIdeaLab();
+        });
+
+        copyPromptBtn.addEventListener("click", async () => {
+            try {
+                await navigator.clipboard.writeText(ideaDisplay.textContent);
+                copyPromptBtn.textContent = "✓ Copied to clipboard!";
+                playBeep(700, "sine");
+                window.setTimeout(() => (copyPromptBtn.textContent = "⎘ Copy Question"), 2200);
+            } catch (err) {
+                showToast("Unable to access clipboard");
+            }
+        });
+
+        function openCommandPalette() {
+            if (!quickDialog.open) {
+                quickDialog.showModal();
+                quickOpen.setAttribute("aria-expanded", "true");
+                quickSearch.value = "";
+                filterLinks("");
+                window.setTimeout(() => quickSearch.focus(), 60);
+            }
+        }
+
+        function closeCommandPalette() {
+            quickDialog.close();
+            quickOpen.setAttribute("aria-expanded", "false");
+        }
+
+        quickOpen.addEventListener("click", openCommandPalette);
+        quickClose.addEventListener("click", closeCommandPalette);
+        quickDialog.addEventListener("click", (e) => {
+            if (e.target === quickDialog) closeCommandPalette();
+        });
+
+        quickLinks.forEach((link) => {
+            link.addEventListener("click", closeCommandPalette);
+        });
+
+        function filterLinks(query) {
+            const q = query.toLowerCase().trim();
+            quickLinks.forEach((link) => {
+                const text = link.textContent.toLowerCase();
+                link.style.display = text.includes(q) ? "flex" : "none";
+            });
+        }
+
+        quickSearch.addEventListener("input", (e) => filterLinks(e.target.value));
+
+        document.addEventListener("keydown", (e) => {
+            const isInput = ["INPUT", "TEXTAREA"].includes(document.activeElement?.tagName);
+
+            if ((e.key === "Escape" || e.code === "Escape") && quickDialog.open) {
+                closeCommandPalette();
+                return;
+            }
+
+            if ((e.key === "/" || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k")) && !isInput) {
+                e.preventDefault();
+                openCommandPalette();
+                return;
+            }
+
+            if (quickDialog.open && !isInput && /^[1-7]$/.test(e.key)) {
+                const target = document.querySelector(`.quick-links a[data-key="${e.key}"]`);
+                if (target) {
+                    e.preventDefault();
+                    target.click();
+                }
+            }
+
+            if (e.altKey && e.shiftKey && !isInput) {
+                if (e.key.toLowerCase() === "a") { e.preventDefault(); toggleAmbientMode(); }
+                if (e.key.toLowerCase() === "r") { e.preventDefault(); toggleReadingMode(); }
+            }
+        });
+
+        const progressBar = document.querySelector(".scroll-progress span");
+        const header = document.querySelector(".sticky-header");
+        const navAnchors = document.querySelectorAll(".nav-link[href^='#']");
+        const observedSections = document.querySelectorAll("section[id]");
+
+        function onScrollUpdate() {
+            const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = scrollable > 0 ? window.scrollY / scrollable : 0;
+            progressBar.style.transform = `scaleX(${progress})`;
+
+            if (window.scrollY > 40) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        }
+
+        window.addEventListener("scroll", onScrollUpdate, { passive: true });
+        window.addEventListener("resize", onScrollUpdate);
+        onScrollUpdate();
+
+        if ("IntersectionObserver" in window) {
+            const spyObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute("id");
+                        navAnchors.forEach((a) => {
+                            a.classList.toggle("active", a.getAttribute("href") === `#${id}`);
+                        });
+                    }
+                });
+            }, { rootMargin: "-25% 0px -65% 0px" });
+
+            observedSections.forEach((s) => spyObserver.observe(s));
+
+            if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                const revealObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("is-visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                document.querySelectorAll(".section, .stat, .frontier-card, .time-item, .morpho-card").forEach((el) => {
+                    el.classList.add("reveal");
+                    revealObserver.observe(el);
+                });
+            }
+        }
+
+        (function initStars() {
+            const canvas = document.getElementById("star-canvas");
+            if (!canvas || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+            const ctx = canvas.getContext("2d");
+            let width, height, stars = [];
+
+            function resize() {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            }
+            window.addEventListener("resize", resize);
+            resize();
+
+            const STAR_COUNT = Math.min(Math.floor(window.innerWidth / 16), 75);
+            for (let i = 0; i < STAR_COUNT; i++) {
+                stars.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    radius: Math.random() * 1.3 + 0.3,
+                    speed: Math.random() * 0.25 + 0.05,
+                    alpha: Math.random() * 0.6 + 0.2
+                });
+            }
+
+            function draw() {
+                ctx.clearRect(0, 0, width, height);
+                ctx.fillStyle = "#60a5fa";
+
+                for (let i = 0; i < stars.length; i++) {
+                    const s = stars[i];
+                    ctx.globalAlpha = s.alpha;
+                    ctx.beginPath();
+                    ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    s.y -= s.speed;
+                    if (s.y < 0) {
+                        s.y = height;
+                        s.x = Math.random() * width;
+                    }
+                }
+                requestAnimationFrame(draw);
+            }
+            draw();
+        })();
+    </script>
+</body>
+
+</html>
